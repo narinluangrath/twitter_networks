@@ -2,6 +2,7 @@
 R scripts to collect tweets and analyze the retweet network
 
 This project was inspired by the following article: http://www.sciencedirect.com/science/article/pii/S0747563215300625
+
 The author analyzes the retweet/mention network for tweets containing the hashtag #RaceTogether but looking at users with the highest betweenness centrality. This code provides an automated method for finding and analyzing the top 5 users with the highest betweeness centrality for any keyword (e.g. #RaceTogether, #Starbucks, #Computers, etc.)
 
 GET_TWEETS.R contains a single function get_tweets(file_name, track_this, timout_min, file_location), which you can use to collect tweets.
