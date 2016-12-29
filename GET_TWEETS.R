@@ -10,7 +10,6 @@ library(rjson)
 # file_name to the location file_location.
 
 get_tweets <- function(file_name, track_this, timeout_min, file_location) {
-  ################# Preliminaries #################
   setwd(file_location)
   
   requestURL = "https://api.twitter.com/oauth/request_token"
@@ -37,4 +36,5 @@ get_tweets <- function(file_name, track_this, timeout_min, file_location) {
                oauth=my_oauth )
 }
 
+# Example: Collect tweets with the hashtag #Star
 get_tweets("star.txt", "#Star", 60, "C:/users/nluangrath/Desktop")
